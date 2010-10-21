@@ -17,7 +17,7 @@ PKG_DESTINATION = ENV["RAILS_PKG_DESTINATION"] || "../#{PKG_NAME}"
 RELEASE_NAME  = "REL #{PKG_VERSION}"
 
 RUBY_FORGE_PROJECT = "aws"
-RUBY_FORGE_USER    = "webster132"
+RUBY_FORGE_USER    = "cmilfont"
 
 desc "Default Task"
 task :default => [ :test ]
@@ -72,8 +72,8 @@ spec = Gem::Specification.new do |s|
   s.rubyforge_project = "aws"
   s.homepage = "http://www.rubyonrails.org"
 
-  s.add_dependency('actionpack', '= 2.3.2' + PKG_BUILD)
-  s.add_dependency('activerecord', '= 2.3.2' + PKG_BUILD)
+  s.add_dependency('actionpack', '= 2.3.5' + PKG_BUILD)
+  s.add_dependency('activerecord', '= 2.3.5' + PKG_BUILD)
 
   s.has_rdoc = true
   s.requirements << 'none'
